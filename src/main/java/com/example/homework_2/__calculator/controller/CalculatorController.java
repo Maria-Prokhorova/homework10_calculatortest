@@ -27,17 +27,17 @@ public class CalculatorController {
     }
 
     @GetMapping(path = "/minus")
-    public String minusCalculator(@RequestParam int num1, @RequestParam int num2) {
+    public String minusCalculator(@RequestParam Integer num1, @RequestParam Integer num2) {
         return service.minus(num1, num2);
     }
 
     @GetMapping(path = "/multiply")
-    public String multiplyCalculator(@RequestParam int num1, @RequestParam int num2) {
+    public String multiplyCalculator(@RequestParam Integer num1, @RequestParam Integer num2) {
         return service.multiply(num1, num2);
     }
 
     @GetMapping(path = "/divide")
-    public String divideCalculator(@RequestParam int num1, @RequestParam int num2) {
+    public String divideCalculator(@RequestParam Integer num1, @RequestParam Integer num2) {
         return service.divide(num1, num2);
     }
 
